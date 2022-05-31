@@ -1,5 +1,6 @@
 :root {
   --main-blue: #1D9BF0;
+  --gray: #71767B;
 }
 
 html {
@@ -11,3 +12,7 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #000;
+  color: #fff;
+}
