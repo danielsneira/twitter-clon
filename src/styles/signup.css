@@ -1,0 +1,107 @@
+:root {
+	--main-blue: #1d9bf0;
+	--gray: #71767b;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+/* globals */
+.btn {
+	display: block;
+	background-color: #fff;
+	color: #000;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	padding: 1rem 2rem;
+	margin-block: 2rem;
+}
+[class$='link'] {
+	text-decoration: none;
+	color: var(--main-blue);
+}
+[class$='container'] {
+	max-width: 40rem;
+	margin: 0 auto;
+	width: 60%;
+}
+
+/* header */
+.header {
+  display: flex;
+	margin-top: 5rem;
+  justify-content: center;
+}
+.header__logo {
+	font-size: 4rem;
+}
+.header__title {
+	font-size: 2.8rem;
+	line-height: 1.2;
+	margin-top: 5rem;
+}
+
+/* sign up */
+.sign-up {
+	position: relative;
+	margin-top: 5rem;
+}
+.sign-up__icon {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+.sign-up__google {
+  font-weight: normal;
+}
+.sign-up__email {
+	margin-bottom: 0.5rem;
+}
+.sign-up__terms {
+	color: var(--gray);
+	font-size: 1.2rem;
+}
+
+.division {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+}
+.division__line {
+	border-top: 1px solid var(--gray);
+	opacity: 0.5;
+	height: 0.5rem;
+	width: 40%;
+}
+.division__or {
+	font-size: 1.2rem;
+}
+.sign-in {
+	margin-top: 5rem;
+}
+.sign-in__title {
+  display: inline-block;
+	font-size: 1.6rem;
+  color: var(--gray);
+}
+.sign-in__link {
+  font-size: 1.6rem;
+}
